@@ -1,0 +1,41 @@
+MenuBar
+
+MenuBar-ul conține următoarele meniuri: File, View, Help. Prin intermediul acestuia, utilizatorii vor putea alege diverse opțiuni, vor putea personaliza interfața și vor avea acces la informații referitoare la modul în care aplicația funcționează. 
+
+Meniul File
+
+Meniul File cuprinde următoarele opțiuni: Open, Save și Exit. Opțiunea Open permite deschiderea unui fișier de tip imagine și încărcarea acestuia pe canvas. 
+La apăsarea butonului Save, se va deschide o fereastră nouă care va permite salvarea imaginii în formatele PNG și JPG, la locația selectată. 
+
+Meniul View
+
+Meniul View cuprinde două opțiuni: Show/Hide Image Operations Menu și Show/Hide Painting Menu. Acestea vor permite utilizatorilor să personalizeze interfața grafică prin ascunderea sau  afișarea meniurilor destinate prelucrării imaginilor și celor pentru desenare.
+
+Meniul Help
+
+Meniul Help va conține informații referitoare la funcționalitățile oferite de aplicație, cât și despre modul corect în care utilizatorii ar trebui să utilizeze aplicația (această opțiune nu a fost încă implementată).
+
+Alte componente ale interfeței
+
+Butoanele Undo și Redo permit revenirea asupra modificărilor efectuate asupra imaginii. Inițial, ambele butoane vor fi dezactivate. 
+Implementarea este realizată prin salvarea imaginilor atunci când sunt modificate într-o lista ‘previousImages’ și revenirea la acestea atunci când se apasă pe butonul Undo. Când butonul Redo este apăsat, se preia ultima imagine din lista ‘nextImages’ (dacă nu este goală). 
+Listele vor avea cel mult 300 de obiecte, iar în cazul în care această limită este atinsă, se va elimina prima imagine din listă.
+
+Prin intermediul unui obiect de tip QComboBox utilizatorul va putea alege diverse dimensiuni pentru filtrele care se vor aplica asupra imaginii. 
+
+Cu cât valoarea aleasă va fi mai mare, cu atât masca aplicată imaginii va fi mai mare, astfel încât efectul filtrului va fi, de asemenea, mai puternic. 
+
+Luminozitatea imaginii poate fi modificată utilizând un QSlider cu valori între -100 și 100, valoarea inițială fiind 0.
+
+Cu ajutorul obiectului de tip QColorDialog se poate alege culoarea dorită pentru realizarea desenelor. 
+
+Utilizatorul va putea apoi alege cu ce fel de instrument dorește să realizeze desenul, fiind disponibile următoarele opțiuni: 
+- Pensula (Brush) 
+- Spray 
+- Creion (Pen) 
+- Fill - umplerea imaginii cu o culoare
+- Dreptunghi (Rectangle) 
+- Cerc (Circle). 
+
+De asemenea, se poate selecta și dimensiunea cu care se vor realiza desenele prin modificarea unui QSlider.
+

@@ -1,0 +1,70 @@
+
+            QMenuBar {
+                background-color: #333333;
+                color: #ffaa00;
+                border: 1px solid #000000;
+            }
+
+            QMenuBar::item {
+                background-color: #333333;
+                color: #ffaa00;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
+
+            QMenuBar::item:selected {
+                background-color: #ffaa00;
+                color: #333333;
+            }
+
+            QMenu {
+                background-color: #333333;
+                color: #ffaa00;
+                border: 1px solid #000000;
+            }
+
+            QMenu::item {
+                background-color: #333333;
+                color: #ffaa00;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
+
+            QMenu::item:selected {
+                background-color: #ffaa00;
+                color: #333333;
+            }
+
+            QPushButton {
+                background-color: #ffaa00;
+                color: #333333;
+                border: 1px solid #000000;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+            QPushButton:hover
+                background-color: #ffcc33;
+            }
+
+            QPushButton:pressed {
+                background-color: #cc8800;
+            }
+
+            QSlider::groove:horizontal {
+                background: #555555;
+                height: 5px;
+            }
+
+            QSlider::handle:horizontal {
+                background: #ffaa00;
+                border: 1px solid #000000;
+                width: 16px;
+                margin: -8px 0;
+                border-radius: 8px;
+            }
+
+            QLabel {
+                color: #000000;
+                padding: 4px;
+            }
